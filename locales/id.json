@@ -1,0 +1,20 @@
+{
+  "products": {
+    "cart": "Tambah cart"
+  },
+  "common": {
+    "players": "Pemain",
+    "allAges": "Semua Umur",
+    "news": "Berita",
+    "more": "Lainnya",
+    "and": "dan",
+    "enterGame": "masuk ke dunia game?!",
+    "helpKiko": "Ayo bantu Kiko dan Poli untuk bertarung di dunia game yang dikuasai monster!",
+    "assist": "Bisakah kamu membantu mereka untuk menang?",
+    "defeatEnemy": "KALAHKAN MUSUHMU DAN JADILAH LEBIH KUAT!",
+    "conquerStages": "TAKLUKKAN SEMUA STAGE-NYA & KUMPULKAN HARTA KARUNNYA",
+    "saveWorld": "SELAMATKAN DUNIA \"MERMAIDS & DRAGONS\" DARI BOS-BOS YANG JAHAT",
+    "play": "Mainkan",
+    "now": "Sekarang !"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "products": {
+    "cart": "Add to Cart"
+  },
+  "common": {
+    "players": "Players",
+    "allAges": "All Ages",
+    "news": "News",
+    "more": "More",
+    "and": "and",
+    "enterGame": "enter the world of gaming?!",
+    "helpKiko": "Let's help Kiko and Poli to battle in a game world dominated by monsters!",
+    "assist": "Can you assist them in winning?",
+    "defeatEnemy": "DEFEAT YOUR ENEMIES AND BECOME STRONGER!",
+    "conquerStages": "Conquer all the stages & collect the treasures!",
+    "saveWorld": "SAVE THE WORLD OF \"MERMAIDS & DRAGONS\" FROM EVIL BOSSES",
+    "play": "Play",
+    "now": "Now !"
+  }
+}

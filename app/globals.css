@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --blue-aqua: #0093c7;
+  --sky-blue: #33a0fa;
+  --charcoal-900: rgba(33, 37, 41, 1);
+  --ocean-navy: rgba(0, 44, 69, 0.85);
+  --ocean-teal-600: #0f7b93;
+  --brick-red: #c55142;
+  --navy-blue: #21294e;
+  --lime-green: #8dff23;
+  --sunset-orange: #ff7e05;
+  --coral-red: #e95a5a;
+  --design-width: 1920; /* your reference width */
+  --screen-width: 100vw;
+  --font-url: "/fonts/DimboRegular.otf";
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ocean-navy: var(--ocean-navy);
+  --color-ocean-teal-600: var(--ocean-teal-600);
+  --color-brick-red: var(--brick-red);
+  --color-blue-aqua: var(--blue-aqua);
+  --color-navy-blue: var(--navy-blue);
+  --color-sky-blue: var(--sky-blue);
+  --color-lime-green: var(--lime-green);
+  --color-sunset-orange: var(--sunset-orange);
+  --color-coral-red: var(--coral-red);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-blue-aqua: var(--blue-aqua);
+  --color-charcoal-900: var(--charcoal-900);
+  --font-roboto: "Roboto", sans-serif;
+  --breakpoint-mobile-xs: 20rem /** 320px */;
+  --breakpoint-mobile-sm: 22.5rem /** 360px */;
+  --breakpoint-mobile-md: 23.4375rem /** 375px */;
+  --breakpoint-mobile-lg: 24.375rem /** 390px */;
+  --breakpoint-mobile-xl: 25.875rem /** 414px */;
+  --breakpoint-tablet-sm: 37.5rem /** 600px */;
+  --breakpoint-tablet-sm2: 40rem /** 640px */;
+  --breakpoint-tablet-md: 48rem /** 768px */;
+  --breakpoint-tablet-lg: 52.125rem /** 834px */;
+  --breakpoint-tablet-xl: 64rem /** 1024px */;
+  --breakpoint-laptop-md: 80rem /** 1280px */;
+  --breakpoint-laptop-lg: 85.375rem /** 1366px */;
+  --breakpoint-qhd: 90rem /** 1440px */;
+  --breakpoint-desktop-sm: 96rem /** 1536px */;
+  --breakpoint-desktop-md: 100rem /** 1600px */;
+  --breakpoint-desktop-lg: 105rem /** 1680px */;
+  --breakpoint-fullhd: 120rem /** 1920px */;
+  --breakpoint-desktop-2xl: 160rem /** 2560px */;
+  --breakpoint-desktop-4k: 240rem /** 3840px */;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Dimbo";
+  src: url("../public/fonts/DimboRegular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-dimbo {
+  font-family: "Dimbo", "Roboto";
+}
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--background);
+}
+
+.kiko-bg {
+  background-image: url("../public/images/all_bg_3.png");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  display: block;
+}
+
+.kiko-width {
+  width: calc(1200 / var(--design-width) * var(--screen-width));
+}
+
+.multiline-ellipsis {
+  display: -webkit-box; /* enables flexbox-like layout for ellipsis */
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical; /* sets box orientation to vertical */
+  overflow: hidden; /* hides overflowing text */
+  text-overflow: ellipsis; /* adds the "..." effect */
+}
